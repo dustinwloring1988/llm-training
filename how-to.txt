@@ -1,0 +1,4 @@
+!pip install evaluate datasets accelerate torch huggingface_hub
+!pip install git+https://github.com/huggingface/transformers 
+
+!python run_clm.py --model_type gpt2 --tokenizer_name openai-community/gpt2 --dataset_name="dustinwloring1988/fineweb-small-test-sample" --output_dir="/output" --config_overrides="n_embd=1024,n_head=8,n_layer=8,n_positions=1024"
