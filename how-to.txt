@@ -9,6 +9,11 @@ or
 
 or
 
+python -m torch.distributed.launch --nproc_per_node=#NUM_GPUS_YOU_HAVE
+YOUR_TRAINING_SCRIPT.py (–arg1 --arg2 --arg3 and all other arguments of your training script)
+
+or
+
 !python run_fim.py \
     --model_name_or_path gpt2 \
     --dataset_name wikitext \
